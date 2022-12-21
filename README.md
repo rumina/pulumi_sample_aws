@@ -1,8 +1,9 @@
 # Demo Pulumi AWS
 
-This demo creates two resources in aws amazon
-- S3 Bucket (my-bucket) and inside add a index.html
-- A Cluster (pulumi_demo)
+This demo creates three resources in aws amazon
+- S3 Bucket (pulumi-demo-bucket) and inside add a index.html
+- A Cluster (pulumi-demo-cluster)
+- A Repository (pulumi-demo-repository)
 
 ## Install Pulumi
 
