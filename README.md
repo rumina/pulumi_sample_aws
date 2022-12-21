@@ -34,7 +34,7 @@ pulumi destroy
 ## Execute to create new pulumi project
 
 ```
-pulumi new <NAME>
+pulumi new <NAME_PROJECT>
 ```
 
 After that, it will ask the language that you want to use.
