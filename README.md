@@ -25,6 +25,14 @@ export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>
 pulumi up
 ```
 
+When the process ends, check in AWS for the creation of resources.
+
+- ECS: https://eu-central-1.console.aws.amazon.com/ecs/v2/clusters?region=eu-central-1
+- ECR: https://eu-central-1.console.aws.amazon.com/ecr/repositories?region=eu-central-1
+- S3: https://s3.console.aws.amazon.com/s3/buckets?region=eu-central-1
+
+Next execute pulumi destroy and check that everithing was deleted.
+
 ## Execute to destroy resources
 
 ```
