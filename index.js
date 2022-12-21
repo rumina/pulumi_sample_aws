@@ -10,16 +10,14 @@ const bucket = new aws.s3.Bucket("my-bucket", {
     },
 });
 
-// Create an Cluster for app
+// Create a Cluster for app
 const foo = new aws.ecs.Cluster("pulumi_demo", {settings: [{
     name: "containerInsights",
     value: "enabled",
 }]});
 
-
 // Export the name of the bucket
 exports.bucketName = bucket.id;
-
 
 const bucketObject = new aws.s3.BucketObject("index.html", {
     acl: "public-read",
@@ -30,6 +28,3 @@ const bucketObject = new aws.s3.BucketObject("index.html", {
 
 exports.bucketEndpoint = pulumi.interpolate`http://${bucket.websiteEndpoint}`;
 
-
-//pulumi up
-//pulumi destroy
